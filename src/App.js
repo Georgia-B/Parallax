@@ -19,6 +19,7 @@ class App extends Component {
     this.container.layer3.update(scrollY);
     this.container.layer4.update(scrollY);
     this.container.layer5.update(scrollY);
+    this.container.layer6.update(scrollY);
   }
 
   render() {

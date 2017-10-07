@@ -12,6 +12,7 @@ class LayerContainer extends Component {
                 <Layer key={3} ref={ref => (this.layer3 = ref)} className='parallax-layer layer-3' speed={0.5} maxScroll={565} />
                 <Layer key={4} ref={ref => (this.layer4 = ref)} className='parallax-layer layer-4' speed={0.7} maxScroll={565} />
                 <Layer key={5} ref={ref => (this.layer5 = ref)} className='parallax-layer layer-5' speed={0.9} maxScroll={565} />
+                <Layer key={6} ref={ref => (this.layer6 = ref)} className='parallax-layer layer-6' speed={1.2} maxScroll={565} />
             </div>
         )
     }
