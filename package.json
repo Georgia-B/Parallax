@@ -1,6 +1,7 @@
 {
   "name": "parallax",
   "homepage": "https://georgia-b.github.io/Parallax",
+  "main": "/dist/index.html",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
