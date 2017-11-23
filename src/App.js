@@ -22,8 +22,9 @@ class App extends Component {
 			this.timer = setInterval(() => {
 				if (this.state.scroll) {
 					var scrollY = Math.max(window.pageYOffset, 0);
+					var width = window.innerWidth;
 					this.container.update(scrollY);
-					const sticky = scrollY >= 1050;
+					const sticky = (width > 600 && scrollY >= 1050) || (width <= 600 && scrollY >= 850);
 					this.setState({
 						sticky,
 						scroll: false
@@ -51,7 +52,7 @@ class App extends Component {
 			<LayerContainer ref={(r) => this.container = r}/>
 			<div className="content">
 				<div className={headerClass}>
-					<h1>Welcome to Some Pictures of Nature and Stuff</h1>
+					<h1>Parallax Mountains</h1>
 				</div>
 				<div className="content-section">
 					<div className="paragraphs">

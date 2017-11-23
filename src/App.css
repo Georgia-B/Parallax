@@ -84,7 +84,7 @@ body {
 .content {
   position: absolute;
   top: 1050px;
-  background: #264a2f;
+  background: #2a4c32;
   width: 100%;
   min-height: 2000px;
 }
@@ -208,4 +208,54 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-image: url('https://goo.gl/QdVeyY');
+}
+
+@media (max-width: 800px) {
+    .parallax-layer {
+      width: 100%;
+      height: 800px;
+      background-size: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .parallax-layer {
+      width: 100%;
+      height: 800px;
+      background-size: 800px 500px;
+    }
+    .layer-0 {
+      top: 0;
+    }
+    .layer-1 {
+      top: -150px;
+    }
+    .layer-2 {
+      top: -190px;
+    }
+    .layer-3 {
+      top: -130px;
+    }
+    .layer-4 {
+      top: -70px;
+    }
+    .layer-5 {
+      top: 40px;
+    }
+    .layer-6 {
+      top: 50px;
+    }
+    .layer-7 {
+      top: 180px;
+    }
+    .content {
+      top: 850px;
+      min-height: 2000px;
+    }
+    .header {
+      height: 200px;
+    }
+    .stickyHeader {
+	    height: 80px;
+    }
 }
