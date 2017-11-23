@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.f06e4595.css",
-  "main.css.map": "static/css/main.f06e4595.css.map",
-  "main.js": "static/js/main.834add5d.js",
-  "main.js.map": "static/js/main.834add5d.js.map"
+  "main.css": "static/css/main.cf055445.css",
+  "main.css.map": "static/css/main.cf055445.css.map",
+  "main.js": "static/js/main.cda2c46c.js",
+  "main.js.map": "static/js/main.cda2c46c.js.map",
+  "static\\media\\layer1_stars.png": "static/media/layer1_stars.f08f74bc.png",
+  "static\\media\\layer2_mountains.png": "static/media/layer2_mountains.62f53036.png",
+  "static\\media\\layer3_mountains.png": "static/media/layer3_mountains.4e0daaf2.png",
+  "static\\media\\layer4_mountains.png": "static/media/layer4_mountains.57969dd2.png",
+  "static\\media\\layer5_mountains.png": "static/media/layer5_mountains.827b0b12.png",
+  "static\\media\\layer6_trees.png": "static/media/layer6_trees.9a940a1f.png",
+  "static\\media\\layer7_trees.png": "static/media/layer7_trees.e34f0618.png"
 }
