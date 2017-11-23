@@ -5,6 +5,7 @@ import LayerContainer from './components/layerContainer';
 class App extends Component {
 	constructor() {
 		super();
+		this.setTimer = this.setTimer.bind(this);
 		this.state = {
 			sticky: false,
 			scroll: false
@@ -12,30 +13,24 @@ class App extends Component {
 	}
 
 	componentDidMount() {
+		this.setTimer();
 		window.addEventListener("scroll", this.onScroll.bind(this));
 	}
 
-	componentDidUpdate() {
-		setInterval(() =>{
-			if (this.state.scroll) {
-				var scrollY = Math.max(window.pageYOffset, 0);
-				this.container.layer0.update(scrollY);
-				this.container.layer01.update(scrollY);
-				this.container.layer1.update(scrollY);
-				this.container.layer2.update(scrollY);
-				this.container.layer3.update(scrollY);
-				this.container.layer4.update(scrollY);
-				this.container.layer5.update(scrollY);
-				this.container.layer6.update(scrollY);
-				this.container.update(scrollY);
-		
-				const sticky = scrollY >= 1050;
-				this.setState({
-					sticky,
-					scroll: false
-				});
-			}
-		}, 10);
+	setTimer() {
+		if (!this.timer) {
+			this.timer = setInterval(() => {
+				if (this.state.scroll) {
+					var scrollY = Math.max(window.pageYOffset, 0);
+					this.container.update(scrollY);
+					const sticky = scrollY >= 1050;
+					this.setState({
+						sticky,
+						scroll: false
+					});
+				}
+			}, 10);
+		}
 	}
 
 	onScroll() {
