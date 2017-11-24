@@ -1,7 +1,7 @@
 body {
 	background: #264a2f;
 	margin: 0;
-	font-family: Helvetica;
+	font-family: "Lato", sans-serif;
   text-align: center;
 }
 
@@ -81,16 +81,16 @@ body {
 	background-image: url(./res/layer7_trees.png);
 }
   
-.content {
+.main {
+	background: #2a4c32;
   position: absolute;
   top: 1050px;
-  background: #2a4c32;
   width: 100%;
   min-height: 2000px;
 }
 
 .header {
-	height: 400px;
+	height: 300px;
 	-webkit-transition: height 0.5s;
 	-moz-transition: height 0.5s;
 	-ms-transition: height 0.5s;
@@ -98,7 +98,7 @@ body {
 	transition: height 0.5s;
 }
 
-.content h1 {
+.header div {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -121,27 +121,38 @@ body {
 	z-index: 50;
 	width: 100%;
 	background-color: #19254c;
-	height: 80px;
+	height: 100px;
 }
 
-.stickyHeader h1 {
+.stickyHeader div {
 	font-size: 25px;
 }
 
-.content-section {
-	height: 800px;
+.content {
+	min-height: 300px;
 	width: 100%;
 	position: relative;
 	background-color: white;
 	z-index: 45;
 }
 
+.stickyContent {
+	padding-top: 100px;
+}
+
 .paragraphs {
 	width: 60%;
-	height: 50%;
 	margin: auto;
-	padding-top: 200px;
+	font-size: 18px;
+	color: #656464;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.paragraph-title {
 	font-size: 20px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
 }
 
 .second-parallax {
@@ -219,10 +230,20 @@ body {
 }
 
 @media (max-width: 600px) {
+	  .main {
+      top: 850px;
+      min-height: 2000px;
+    }
+    .header {
+      height: 200px;
+    }
+    .stickyHeader {
+	    height: 80px;
+    }
     .parallax-layer {
-      width: 100%;
+      width: 600px;
       height: 800px;
-      background-size: 800px 500px;
+      background-size: 100% 400px;
     }
     .layer-0 {
       top: 0;
@@ -247,15 +268,5 @@ body {
     }
     .layer-7 {
       top: 180px;
-    }
-    .content {
-      top: 850px;
-      min-height: 2000px;
-    }
-    .header {
-      height: 200px;
-    }
-    .stickyHeader {
-	    height: 80px;
     }
 }
